@@ -1,5 +1,6 @@
 #ifndef MONTY_H
 #define MONTY_H
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/types.h>
@@ -42,7 +43,7 @@ typedef struct instruction_s
 /**
  * struct logs_s | assistant variables |
  * @args: incoming values
- * @ptr: a pointer to the monty files
+ * @file: a pointer to the monty files
  * @content: the line data
  * @swit: indicator to change the stack to queue
  * Description: share values between files 
@@ -51,11 +52,21 @@ typedef struct instruction_s
 typedef struct logs_s
 {
 	char *args;
-	FILE *ptr;
+	FILE *file;
 	char *data;
 	int swit;
 }  logs_t;
 extern logs_t logs;
+
+
+void free_st(stack_t *head);
+int exe(char *data, stack_t **st, unsigned int i, FILE *file);
+void newnode(stack_t **head, int v);
+void queue_p(stack_t **head, unsigned int i);
+void newqueue(stack_t **head, int v);
+void my_pint(stack_t **head, unsigned int i);
+void my_pall(stack_t **head, unsigned int i);
+void my_push(stack_t **head, unsigned int i);
 
 
 
