@@ -68,6 +68,7 @@ void my_pint(stack_t **head, unsigned int i);
 void my_pall(stack_t **head, unsigned int i);
 void my_push(stack_t **head, unsigned int i);
 void my_pop(stack_t **head, unsigned int i);
+void my_swap(stack_t **head, unsigned int i);
 
 
 
