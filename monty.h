@@ -38,4 +38,25 @@ typedef struct instruction_s
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
+
+/**
+ * struct logs_s | assistant variables |
+ * @args: incoming values
+ * @ptr: a pointer to the monty files
+ * @content: the line data
+ * @swit: indicator to change the stack to queue
+ * Description: share values between files 
+ */
+
+typedef struct logs_s
+{
+	char *args;
+	FILE *ptr;
+	char *data;
+	int swit;
+}  logs_t;
+extern logs_t logs;
+
+
+
 #endif
