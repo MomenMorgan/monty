@@ -1,7 +1,5 @@
 #include "monty.h"
-#include <stdlib.h>
 logs_t logs = {NULL, NULL, NULL, 0};
-
 /**
 * main - the monty code build
 * @argc: number of arguments
