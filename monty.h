@@ -70,6 +70,7 @@ void my_push(stack_t **head, unsigned int i);
 void my_pop(stack_t **head, unsigned int i);
 void my_swap(stack_t **head, unsigned int i);
 void my_add(stack_t **head, unsigned int i);
+void my_nop(stack_t **head, unsigned int i);
 
 
 

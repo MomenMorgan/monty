@@ -14,6 +14,7 @@ int exe(char *data, stack_t **st, unsigned int i, FILE *file)
 				{"pop", my_pop},
 				{"swap", my_swap},
 				{"add", my_add},
+				{"nop", my_nop},
 				{NULL, NULL}
 				};
 	unsigned int j = 0;
